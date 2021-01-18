@@ -159,3 +159,6 @@ label {
 .alert-success {
   background-color: var(--mainGreen);
 }
+.total {
+  border-bottom : 6px solid var(--mainRed)
+}
