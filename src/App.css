@@ -71,15 +71,19 @@ h1 {
 .item {
   background-color: var(--mainWhite);
   line-height: 1.5rem;
-  padding : 10px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  border : 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   margin-bottom: 1rem;
   transition: all 0.3s linear;
 }
+.item:hover {
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 2px 10px rgba(0, 0, 0, 0.22);
+  /* transform: scale(1.05); */
+}
 .info {
-  flex : 0 0 60%;
+  flex: 0 0 60%;
   display: flex;
   justify-content: space-between;
 }
@@ -87,20 +91,19 @@ h1 {
   margin-right: 2rem;
   text-transform: capitalize;
 }
-.amount{
+.amount {
   font-weight: 300;
   font-size: 1rem;
   color: var(--mainWhite);
   background-color: var(--primaryColor);
   border-radius: 2px;
   padding: 1px 3px;
-  display : inline-block;
+  display: inline-block;
   min-width: 70px;
   text-align: center;
-
 }
 .clear-btn,
-.edit-btn{
+.edit-btn {
   background: none;
   outline: none;
   border: none;
@@ -113,29 +116,46 @@ h1 {
 .edit-btn {
   color: var(--mainGreen);
 }
-.form-center{
-  padding : 0 1rem;
+.form-center {
+  padding: 0 1rem;
   display: flex;
 }
 label {
   display: block;
-  color : var(--mainGrey);
+  color: var(--mainGrey);
   font-size: 1rem;
   text-transform: capitalize;
 }
 .form-group {
-  flex : 0 0 50%;
-  padding : 1rem 0.75rem;
+  flex: 0 0 50%;
+  padding: 1rem 0.75rem;
 }
-.form-control{
+.form-control {
   background: transparent;
   border: none;
-  border-bottom : 1px solid var(--mainGrey);
+  border-bottom: 1px solid var(--mainGrey);
   border-radius: 0;
   outline: none;
-  height : 3rem;
+  height: 3rem;
   width: 100%;
   font-size: 16px;
-  margin : 0 0 8px 0;
-  padding : 0 ;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+.alert {
+  padding: 0.75rem 1.25rem;
+  color: var(--mainWhite);
+  text-align: center;
+  margin: 2rem auto 0 auto;
+  border-radius: 2px;
+  text-transform: capitalize;
+  width: 90%;
+  letter-spacing: 3px;
+  border: none;
+}
+.alert-danger {
+  background-color: var(--mainRed);
+}
+.alert-success {
+  background-color: var(--mainGreen);
 }
