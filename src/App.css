@@ -94,6 +94,10 @@ h1 {
   background-color: var(--primaryColor);
   border-radius: 2px;
   padding: 1px 3px;
+  display : inline-block;
+  min-width: 70px;
+  text-align: center;
+
 }
 .clear-btn,
 .edit-btn{
@@ -108,4 +112,30 @@ h1 {
 }
 .edit-btn {
   color: var(--mainGreen);
+}
+.form-center{
+  padding : 0 1rem;
+  display: flex;
+}
+label {
+  display: block;
+  color : var(--mainGrey);
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.form-group {
+  flex : 0 0 50%;
+  padding : 1rem 0.75rem;
+}
+.form-control{
+  background: transparent;
+  border: none;
+  border-bottom : 1px solid var(--mainGrey);
+  border-radius: 0;
+  outline: none;
+  height : 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin : 0 0 8px 0;
+  padding : 0 ;
 }
