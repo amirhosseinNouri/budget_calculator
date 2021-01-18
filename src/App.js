@@ -29,6 +29,14 @@ function App() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (charge !== "" && amount > 0) {
+      const newExpense = { id: uuidv4(), charge, amount };
+      setExpenses([...expenses, newExpense]);
+      setCharge('')
+      setAmount('')
+    } else {
+      // handle alert call
+    }
   };
 
   return (
@@ -50,7 +58,7 @@ function App() {
         <span className="total">
           $
           {expenses.reduce((total, current) => {
-            return (total += current.amount);
+            return (total += parseInt(current.amount));
           }, 0)}
         </span>
       </h1>
